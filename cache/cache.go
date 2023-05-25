@@ -17,12 +17,12 @@ func (c *Cache) Set(key string, value interface{}) {
 	return
 }
 
-func (c *Cache) Get(key string) interface{} {
+func (c *Cache) Get(key string) (interface{}, error) {
 	valueByKey, exists := c.cacheMap[key]
 	if exists {
-		return valueByKey
+		return valueByKey, nil
 	}
-	return errors.New("No such key. Please, use valid key.")
+	return nil, errors.New("No such key. Please, use valid key.")
 }
 
 func (c *Cache) Delete(key string) {
