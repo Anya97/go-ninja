@@ -4,6 +4,6 @@
 
 * Set(key string, value interface{})
 
-* Get(key string)
+* Get(key string) (interface{}, error)
 
 * Delete(key string)
