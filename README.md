@@ -1,4 +1,4 @@
-# in-memory-cache with TTL :memo:
+# in-memory-cache :memo:
 
 ### Сache has possible methods:
 
